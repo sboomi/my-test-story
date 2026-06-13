@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+#MISE description="Build the game"
+
+mkdir -p "$BUILD_DIR"
+tweego -f sugarcube-2 \
+  -o "$BUILD_DIR/$PROJECT_NAME.html" \
+  -m "$MODULES_DIR" \
+  "$SOURCE_DIR"

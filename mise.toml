@@ -1,0 +1,16 @@
+[tools]
+"github:tmedwards/tweego" = "latest"
+
+[hooks]
+enter = "mise install --quiet && mise trust --quiet"
+
+[env]
+PROJECT_NAME = "{{ config_root | basename }}"
+BUILD_DIR = "{{ config_root }}/build"
+SOURCE_DIR = "{{ config_root }}/src"
+MODULES_DIR = "{{ config_root }}/modules"
+TWEEGO_PATH = "{{ config_root }}/storyformats"
+
+[tasks.story-formats]
+description = "Checks installed Twine formats"
+run = "tweego --list-formats"

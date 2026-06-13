@@ -1,0 +1,27 @@
+:: StoryTitle
+My Test Story
+
+:: StoryData
+{
+  "ifid": "8B6A4309-A0AC-4FBD-8C29-7E0A60E9CC52",
+  "format": "SugarCube",
+  "format-version": "2.36.1"
+}
+
+:: Start
+Welcome to my test story!
+
+You find yourself standing at a crossroads.
+
+[[Go left->Left Path]]
+[[Go right->Right Path]]
+
+:: Left Path
+You went left and found a treasure chest!
+
+[[Return->Start]]
+
+:: Right Path
+You went right and encountered a dragon!
+
+[[Return->Start]]

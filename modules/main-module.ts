@@ -1,0 +1,1 @@
+console.log("This is the module main-module.ts");

@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+#MISE description="Watch and build"
+
+mkdir -p "$BUILD_DIR"
+tweego -f sugarcube-2 \
+  -w \
+  -o "$BUILD_DIR/$PROJECT_NAME.html" \
+  -m "$MODULES_DIR" \
+  "$SOURCE_DIR"
